@@ -13,7 +13,6 @@ html {
 body {
     background: #191919;
     font-family: "Space Grotesk", sans-serif;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -983,89 +982,183 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 560px) {}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 560px) {
     .title-main h3 {
         font-size: 3rem;
+        margin-bottom: 10px;
     }
 
-    .img img {
-        width: 400px;
-        margin-left: 0;
+    .title-main p {
+        font-size: 15px;
+    }
+
+    .container .img img {
+        padding-right: 60px
+    }
+
+    .menu-header h3 {
+        font-size: 2rem;
+    }
+
+    .menu-header p {
+        font-size: 10px;
     }
 
     .menu-content-item {
-        height: 350px;
+        width: 400px;
+        height: 400px;
     }
 
-    .menu-content-item-shop {
-        gap: 110px;
+    .menu-content-item-img img {
+        width: 250px;
+    }
+
+    .service-header h3 {
+        font-size: 2rem;
+    }
+
+    .service-header p {
+        font-size: 10px;
+    }
+
+    .service-content-item img {
+        width: 350px;
+    }
+
+    .about-header h3 {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 10px;
+    }
+
+    .about-img {
+        justify-content: center;
+    }
+
+    .about-img img {
+        width: 350px;
+    }
+
+    .about-description p {
+        font-size: 15px;
+    }
+
+    .contact-header h3 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 10px;
+    }
+
+    .contact-img img {
+        width: 350px;
     }
 
     .contact-form form {
         width: 350px;
-        margin-left: 0;
+        height: 350px;
     }
 
     .contact-form form input {
         width: 250px;
     }
 
-    .wrap {
-        flex-direction: column;
-        gap: 10px;
+    .contact-form form button {
+        width: 80px;
+        padding: 10px;
     }
 
-    .footer-items h3 {
-        border-bottom: 2px solid #222;
+    .footer-copyright p {
+        font-size: 15px;
     }
-}
 
-@media screen and (max-width: 360px) {
-    .navbar-logo a {
+    .footer-copyright p a {
         font-size: 20px;
     }
 
-    .navbar-nav.active {
-        width: 15rem;
+    .wrap {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .img img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container .img {
+        justify-content: center;
     }
 
-    .input-style {
-        width: 150px;
+    .img img {
+        width: 350px;
+        margin-left: 40px;
     }
 
-    .input-style input {
-        width: 115px;
-    }
-
-    .title-main h3 {
-        font-size: 2.5rem;
-        line-height: 40px;
-    }
-
-    .container .img img {
-        padding-right: 70px;
+    .menu-content-item {
+        width: 300px;
+        height: 350px;
     }
 
     .menu-content-item-shop {
         gap: 100px;
     }
 
-    .menu-content-item-shop p {
-        font-weight: 400;
-        font-size: 15px;
+    .contact-form form {
+        width: 300px;
+        margin-left: 0;
     }
 
-    .menu-content-item-shop i {
+    .wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-logo a {
         font-size: 20px;
     }
 
-    .contact-form form {
-        width: 300px;
+    .navbar-input {
+        width: 150px;
+        gap: 0;
     }
 
-    .contact-form form button {
-        padding: 15px;
+    .navbar-input input {
+        width: 80px;
+    }
+
+    .hamburger i {
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .title-main h3 {
+        font-size: 3rem;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navbar-input input {
+        width: 65px;
+    }
+
+    .navbar-nav.active {
+        width: 13rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .img img {
+        width: 300px;
     }
 }

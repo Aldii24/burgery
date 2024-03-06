@@ -6,6 +6,7 @@ menu.onclick = () => {
 }
 
 document.addEventListener('click', function (e) {
+    console.log(e)
     if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
         navbarNav.classList.remove('active');
     }
