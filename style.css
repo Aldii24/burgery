@@ -17,7 +17,6 @@ body {
 
 .navbar {
     display: flex;
-    background-color: #FC6736;
     padding: 20px 5%;
     align-items: center;
     position: fixed;
@@ -25,6 +24,19 @@ body {
     left: 0;
     right: 0;
     justify-content: space-between;
+}
+
+.waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 1300px;
+}
+
+.waves2 {
+    display: none;
 }
 
 .navbar-logo {
@@ -725,7 +737,7 @@ input::placeholder {
         position: absolute;
         right: -100%;
         top: 0;
-        margin-top: 77px;
+        margin-top: 70px;
     }
 
     .navbar-nav.active {
@@ -737,7 +749,7 @@ input::placeholder {
         -o-transition: 0.3s all ease-in-out;
         width: 20rem;
         height: 100vh;
-        background-color: #222;
+        background-color: #FC6736;
     }
 
     .navbar-nav li a {
@@ -748,7 +760,7 @@ input::placeholder {
 
     .navbar-nav li a::after {
         content: "";
-        border-bottom: 1px solid #FC6736;
+        border-bottom: 1px solid #222;
         transform-origin: left;
         transform: scaleX(0);
         -webkit-transform: scaleX(0);
@@ -1152,6 +1164,20 @@ input::placeholder {
 
     .navbar-nav.active {
         width: 13rem;
+    }
+
+    .waves {
+        display: none;
+    }
+
+    .waves2 {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 700px;
     }
 
     .img {
